@@ -34,11 +34,11 @@ class GenreController extends Controller
     {
         //
         $request->validate([
-            'nama' => 'required|unique:genres,nama|min:5',
+            'name' => 'required|unique:genres,nama|min:5',
         ], [            // custom message
-            'nama.required' => 'Nama harus diisi',
-            'nama.unique' => 'Nama sudah digunakan',
-            'nama.min' => 'Nama harus diisi lebih dari 5 karakter',
+            'name.required' => 'Nama harus diisi',
+            'name.unique' => 'Nama sudah digunakan',
+            'name.min' => 'Nama harus diisi lebih dari 5 karakter',
         ]);
 
         // insert data use Eloquent ORM
@@ -74,11 +74,11 @@ class GenreController extends Controller
     {
         //
         $request->validate([
-            'nama' => 'required|unique:genres,nama|min:5',
+            'name' => 'required|unique:genres,nama|min:5',
         ], [
-            'nama.required' => 'Nama harus diisi',
-            'nama.unique' => 'Nama sudah digunakan',
-            'nama.min' => 'Nama harus diisi lebih dari 5 karakter',
+            'name.required' => 'Nama harus diisi',
+            'name.unique' => 'Nama sudah digunakan',
+            'name.min' => 'Nama harus diisi lebih dari 5 karakter',
         ]);
 
         $genre->update($request->all());

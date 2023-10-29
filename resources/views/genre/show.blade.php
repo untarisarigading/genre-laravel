@@ -36,6 +36,14 @@
                   <label for="nama">Nama</label>
                   <input type="text" name="nama" id="nama" class="form-control" placeholder="Enter nama" value="{{ $genres->nama }}" disabled>
                 </div>
+                <div class="form-group">
+                  <label for="umur">Umur</label>
+                  <input type="number" name="umur" id="umur" class="form-control" placeholder="Enter Umur" value="{{ $genres->umur }}" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="bio">Biografi</label>
+                  <textarea name="bio" id="bio" cols="30" rows="10" class="form-control" placeholder="Input Biografi" disabled>{{ $genres->bio }}</textarea>
+                </div>
               </div>
               <!-- /.card-body -->
 
